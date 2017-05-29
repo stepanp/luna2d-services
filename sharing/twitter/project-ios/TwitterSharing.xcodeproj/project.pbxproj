@@ -1,0 +1,273 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD4623D41EC5312D0085FEC4 /* TwitterSharing.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4623D31EC5312D0085FEC4 /* TwitterSharing.m */; };
+		FD4623D51EC5312D0085FEC4 /* TwitterSharing.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD4623D21EC5312D0085FEC4 /* TwitterSharing.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD4623CD1EC5312D0085FEC4 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FD4623D51EC5312D0085FEC4 /* TwitterSharing.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD4623CF1EC5312D0085FEC4 /* libTwitterSharing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTwitterSharing.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD4623D21EC5312D0085FEC4 /* TwitterSharing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwitterSharing.h; sourceTree = "<group>"; };
+		FD4623D31EC5312D0085FEC4 /* TwitterSharing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterSharing.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD4623CC1EC5312D0085FEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD4623C61EC5312D0085FEC4 = {
+			isa = PBXGroup;
+			children = (
+				FD4623D11EC5312D0085FEC4 /* TwitterSharing */,
+				FD4623D01EC5312D0085FEC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD4623D01EC5312D0085FEC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD4623CF1EC5312D0085FEC4 /* libTwitterSharing.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD4623D11EC5312D0085FEC4 /* TwitterSharing */ = {
+			isa = PBXGroup;
+			children = (
+				FD4623D21EC5312D0085FEC4 /* TwitterSharing.h */,
+				FD4623D31EC5312D0085FEC4 /* TwitterSharing.m */,
+			);
+			path = TwitterSharing;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD4623CE1EC5312D0085FEC4 /* TwitterSharing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD4623D81EC5312D0085FEC4 /* Build configuration list for PBXNativeTarget "TwitterSharing" */;
+			buildPhases = (
+				FD4623CB1EC5312D0085FEC4 /* Sources */,
+				FD4623CC1EC5312D0085FEC4 /* Frameworks */,
+				FD4623CD1EC5312D0085FEC4 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TwitterSharing;
+			productName = TwitterSharing;
+			productReference = FD4623CF1EC5312D0085FEC4 /* libTwitterSharing.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD4623C71EC5312D0085FEC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = luna2d;
+				TargetAttributes = {
+					FD4623CE1EC5312D0085FEC4 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD4623CA1EC5312D0085FEC4 /* Build configuration list for PBXProject "TwitterSharing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD4623C61EC5312D0085FEC4;
+			productRefGroup = FD4623D01EC5312D0085FEC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD4623CE1EC5312D0085FEC4 /* TwitterSharing */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD4623CB1EC5312D0085FEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD4623D41EC5312D0085FEC4 /* TwitterSharing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FD4623D61EC5312D0085FEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD4623D71EC5312D0085FEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD4623D91EC5312D0085FEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(LUNA2D_PATH)/luna2d/services/platform/ios/api/";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LUNA2D_PATH = "$(PROJECT_DIR)/../../../../luna2d";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FD4623DA1EC5312D0085FEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = "$(LUNA2D_PATH)/luna2d/services/platform/ios/api/";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LUNA2D_PATH = "$(PROJECT_DIR)/../../../../luna2d";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD4623CA1EC5312D0085FEC4 /* Build configuration list for PBXProject "TwitterSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4623D61EC5312D0085FEC4 /* Debug */,
+				FD4623D71EC5312D0085FEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD4623D81EC5312D0085FEC4 /* Build configuration list for PBXNativeTarget "TwitterSharing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD4623D91EC5312D0085FEC4 /* Debug */,
+				FD4623DA1EC5312D0085FEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD4623C71EC5312D0085FEC4 /* Project object */;
+}
