@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD69A5CF1EDF7D19009EDDC3 /* AdMobMediation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD69A5CE1EDF7D19009EDDC3 /* AdMobMediation.m */; };
+		FD69A5D01EDF7D19009EDDC3 /* AdMobMediation.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FD69A5CD1EDF7D19009EDDC3 /* AdMobMediation.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FD69A5C81EDF7D19009EDDC3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FD69A5D01EDF7D19009EDDC3 /* AdMobMediation.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FD69A5CA1EDF7D19009EDDC3 /* libIosAdMobMediation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libIosAdMobMediation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD69A5CD1EDF7D19009EDDC3 /* AdMobMediation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdMobMediation.h; sourceTree = "<group>"; };
+		FD69A5CE1EDF7D19009EDDC3 /* AdMobMediation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdMobMediation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD69A5C71EDF7D19009EDDC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD69A5C11EDF7D19009EDDC3 = {
+			isa = PBXGroup;
+			children = (
+				FD69A5CC1EDF7D19009EDDC3 /* IosAdMobMediation */,
+				FD69A5CB1EDF7D19009EDDC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD69A5CB1EDF7D19009EDDC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD69A5CA1EDF7D19009EDDC3 /* libIosAdMobMediation.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD69A5CC1EDF7D19009EDDC3 /* IosAdMobMediation */ = {
+			isa = PBXGroup;
+			children = (
+				FD69A5CD1EDF7D19009EDDC3 /* AdMobMediation.h */,
+				FD69A5CE1EDF7D19009EDDC3 /* AdMobMediation.m */,
+			);
+			path = IosAdMobMediation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD69A5C91EDF7D19009EDDC3 /* IosAdMobMediation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD69A5D31EDF7D19009EDDC3 /* Build configuration list for PBXNativeTarget "IosAdMobMediation" */;
+			buildPhases = (
+				FD69A5C61EDF7D19009EDDC3 /* Sources */,
+				FD69A5C71EDF7D19009EDDC3 /* Frameworks */,
+				FD69A5C81EDF7D19009EDDC3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IosAdMobMediation;
+			productName = IosAdMobMediation;
+			productReference = FD69A5CA1EDF7D19009EDDC3 /* libIosAdMobMediation.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD69A5C21EDF7D19009EDDC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = luna2d;
+				TargetAttributes = {
+					FD69A5C91EDF7D19009EDDC3 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FD69A5C51EDF7D19009EDDC3 /* Build configuration list for PBXProject "IosAdMobMediation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FD69A5C11EDF7D19009EDDC3;
+			productRefGroup = FD69A5CB1EDF7D19009EDDC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD69A5C91EDF7D19009EDDC3 /* IosAdMobMediation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD69A5C61EDF7D19009EDDC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD69A5CF1EDF7D19009EDDC3 /* AdMobMediation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FD69A5D11EDF7D19009EDDC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(LUNA2D_PATH)/luna2d/services/platform/ios/api/",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Headers/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LUNA2D_PATH = "$(PROJECT_DIR)/../../../../luna2d";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FD69A5D21EDF7D19009EDDC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(LUNA2D_PATH)/luna2d/services/platform/ios/api/",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Headers/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LUNA2D_PATH = "$(PROJECT_DIR)/../../../../luna2d";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD69A5D41EDF7D19009EDDC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				HEADER_SEARCH_PATHS = (
+					"$(LUNA2D_PATH)/luna2d/services/platform/ios/api/",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Headers/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FD69A5D51EDF7D19009EDDC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				HEADER_SEARCH_PATHS = (
+					"$(LUNA2D_PATH)/luna2d/services/platform/ios/api/",
+					"$(PROJECT_DIR)/GoogleMobileAds.framework/Headers/",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD69A5C51EDF7D19009EDDC3 /* Build configuration list for PBXProject "IosAdMobMediation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD69A5D11EDF7D19009EDDC3 /* Debug */,
+				FD69A5D21EDF7D19009EDDC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD69A5D31EDF7D19009EDDC3 /* Build configuration list for PBXNativeTarget "IosAdMobMediation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD69A5D41EDF7D19009EDDC3 /* Debug */,
+				FD69A5D51EDF7D19009EDDC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FD69A5C21EDF7D19009EDDC3 /* Project object */;
+}
