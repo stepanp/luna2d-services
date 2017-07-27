@@ -34,6 +34,8 @@
 	wasRewardedVideoSuccess = false;
 	isRewardedVideoShowing = false;
 	isRewardedVideoCaching = false;
+	isBannerLoading = false;
+	isBannerLoaded = false;
 	
 	self.appId = [LUNAIosServicesApi getConfigString:@"adMobAppId"];
 	self.bannerId = [LUNAIosServicesApi getConfigString:@"adMobBannerId"];
@@ -108,20 +110,24 @@
 // Check for banner is shown
 -(BOOL) isBannerShown
 {
-	return self.bannerView != nil;
+	return isBannerLoaded;
 }
 
 // Show banner
 -(void) showBanner: (NSString*) location
 {
-	if(![self isBannerEnabled] || self.bannerView) return;
+	if(![self isBannerEnabled] || isBannerLoading || isBannerLoaded) return;
 	
 	CGPoint origin = CGPointMake(0.0, [self getViewController].view.frame.size.height - CGSizeFromGADAdSize(kGADAdSizeSmartBannerPortrait).height);
 
 	self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait origin:origin];
 	self.bannerView.adUnitID = self.bannerId;
 	self.bannerView.rootViewController = [self getViewController];
+	self.bannerView.delegate = self;
 	[[self getViewController].view addSubview: self.bannerView];
+	
+	isBannerLoaded = false;
+	isBannerLoading = true;
 	[self.bannerView loadRequest: [self makeRequest: location]];
 }
 
@@ -132,6 +138,22 @@
 	
 	[self.bannerView removeFromSuperview];
 	self.bannerView = nil;
+}
+
+-(void) adViewDidReceiveAd:(GADBannerView*)adView
+{
+	DEBUG_LOG(@"adViewDidReceiveAd");
+	
+	isBannerLoading = false;
+	isBannerLoaded = true;
+}
+
+-(void) adView:(GADBannerView*)adView didFailToReceiveAdWithError:(GADRequestError*)error
+{
+	NSLog(@"Banner failed to load with error %@", [error localizedDescription]);
+	
+	isBannerLoading = false;
+	isBannerLoaded = false;
 }
 
 
@@ -205,7 +227,7 @@
 
 -(void) interstitial:(GADInterstitial*)interstitial didFailToReceiveAdWithError:(GADRequestError *)error
 {
-	NSLog(@"Intersisital failted to load with error %@", error.localizedDescription);
+	NSLog(@"Intersisital failed to load with error %@", error.localizedDescription);
 	
 	self.interstitial = nil;
 	needShowInterstitial = false;

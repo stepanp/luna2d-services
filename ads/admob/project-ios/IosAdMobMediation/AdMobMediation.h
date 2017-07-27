@@ -34,12 +34,14 @@
 
 @import GoogleMobileAds;
 
-@interface AdMobMediation : NSObject <LUNAIosAdsProtocol, GADInterstitialDelegate, GADRewardBasedVideoAdDelegate>
+@interface AdMobMediation : NSObject <LUNAIosAdsProtocol, GADInterstitialDelegate, GADRewardBasedVideoAdDelegate, GADBannerViewDelegate>
 {
 	bool needShowInterstitial;
 	bool wasRewardedVideoSuccess;
 	bool isRewardedVideoShowing;
 	bool isRewardedVideoCaching;
+	bool isBannerLoading;
+	bool isBannerLoaded;
 }
 
 @property (copy) void (^setOnInterstitialClosedProp)();
