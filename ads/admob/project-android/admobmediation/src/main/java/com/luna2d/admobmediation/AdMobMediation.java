@@ -87,7 +87,8 @@ public class AdMobMediation extends LunaAdsService implements LunaActivityListen
 	private boolean isRewardedVideoShowing = false;
 	private boolean isRewardedVideoCaching = false;
 	private boolean isRewardedVideoLoaded = false;
-	private boolean isBannerShownFlag = false;
+	private boolean isBannerLoading = false;
+	private boolean isBannerLoaded = false;
 
 	private void debugLog(String text)
 	{
@@ -123,17 +124,18 @@ public class AdMobMediation extends LunaAdsService implements LunaActivityListen
 	@Override
 	public boolean isBannerShown()
 	{
-		return isBannerShownFlag;
+		return isBannerLoaded;
 	}
 
 	@Override
 	public void showBanner(String location)
 	{
-		if(!isBannerEnabled() || bannerView != null) return;
+		if(!isBannerEnabled() || isBannerLoading || isBannerLoaded) return;
 
 		debugLog("Show banner");
 
-		isBannerShownFlag = true;
+		isBannerLoaded = false;
+		isBannerLoading = true;
 
 		LunaServicesApi.runInUiThread(new Runnable()
 		{
@@ -164,7 +166,6 @@ public class AdMobMediation extends LunaAdsService implements LunaActivityListen
 		if(bannerView == null) return;
 
 		debugLog("Hide banner");
-		isBannerShownFlag = false;
 
 		LunaServicesApi.runInUiThread(new Runnable()
 		{
@@ -188,6 +189,8 @@ public class AdMobMediation extends LunaAdsService implements LunaActivityListen
 		public void onAdLoaded()
 		{
 			debugLog("onAdLoaded banner");
+			isBannerLoading = false;
+			isBannerLoaded = true;
 
 			LunaServicesApi.runInUiThread(new Runnable()
 			{
@@ -198,6 +201,15 @@ public class AdMobMediation extends LunaAdsService implements LunaActivityListen
 					layout.requestLayout();
 				}
 			});
+		}
+
+		@Override
+		public void onAdFailedToLoad(int errorCode)
+		{
+			isBannerLoading = false;
+			isBannerLoaded = false;
+
+			Log.e(LunaServicesApi.getLogTag(), "Banner failted to load with error " + errorCode);
 		}
 	};
 
