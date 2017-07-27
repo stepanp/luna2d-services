@@ -35,48 +35,48 @@ import com.stepanp.luna2d.services.api.*;
 
 public class TwitterSharing extends LunaSharingService
 {
-    @Override
-    public String getName()
-    {
+	@Override
+	public String getName()
+	{
 		return "twitter";
-    }
+	}
 
-    @Override
-    public void text(String text)
-    {
+	@Override
+	public void text(String text)
+	{
 
-    }
+	}
 
-    @Override
-    public void image(String imagePath, String text)
-    {
-        try
-        {
-            Activity activity = LunaServicesApi.getSharedActivity();
+	@Override
+	public void image(String imagePath, String text)
+	{
+		try
+		{
+			Activity activity = LunaServicesApi.getSharedActivity();
 
-            Intent intent = new Intent();
-            intent.setAction(Intent.ACTION_SEND);
-            intent.setType("image/*");
-            intent.putExtra(Intent.EXTRA_TEXT, text);
-            intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(imagePath)));
+			Intent intent = new Intent();
+			intent.setAction(Intent.ACTION_SEND);
+			intent.setType("image/*");
+			intent.putExtra(Intent.EXTRA_TEXT, text);
+			intent.putExtra(Intent.EXTRA_STREAM, Uri.fromFile(new File(imagePath)));
 
-            List<ResolveInfo> sharingProviders = activity.getPackageManager().queryIntentActivities(intent, 0);
+			List<ResolveInfo> sharingProviders = activity.getPackageManager().queryIntentActivities(intent, 0);
 
-            for(ResolveInfo info : sharingProviders)
-            {
-                if(info.activityInfo.packageName.equalsIgnoreCase("com.twitter.android"))
-                {
-                    intent.setPackage(info.activityInfo.packageName);
-                    break;
-                }
-            }
+			for(ResolveInfo info : sharingProviders)
+			{
+				if(info.activityInfo.packageName.equalsIgnoreCase("com.twitter.android"))
+				{
+					intent.setPackage(info.activityInfo.packageName);
+					break;
+				}
+			}
 
-            activity.startActivity(Intent.createChooser(intent, null));
-        }
-        catch(Exception e)
-        {
-            Log.e(LunaServicesApi.getLogTag(), "Exception while sharing twitter image " + e.getMessage());
-        }
+			activity.startActivity(Intent.createChooser(intent, null));
+		}
+		catch(Exception e)
+		{
+			Log.e(LunaServicesApi.getLogTag(), "Exception while sharing twitter image " + e.getMessage());
+		}
 
-    }
+	}
 }
