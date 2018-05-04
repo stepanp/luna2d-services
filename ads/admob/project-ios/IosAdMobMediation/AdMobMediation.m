@@ -118,12 +118,21 @@
 {
 	if(![self isBannerEnabled] || isBannerLoading || isBannerLoaded) return;
 	
-	CGPoint origin = CGPointMake(0.0, [self getViewController].view.frame.size.height - CGSizeFromGADAdSize(kGADAdSizeSmartBannerPortrait).height);
+	CGFloat offsetY = 0.0;
+	
+	if(@available(iOS 11.0, *))
+	{
+		UIWindow *mainWindow = [[[UIApplication sharedApplication] delegate] window];
+		offsetY = mainWindow.safeAreaInsets.bottom;
+	}
+	
+	CGPoint origin = CGPointMake(0.0, [self getViewController].view.frame.size.height - offsetY - CGSizeFromGADAdSize(kGADAdSizeSmartBannerPortrait).height);
 
 	self.bannerView = [[GADBannerView alloc] initWithAdSize:kGADAdSizeSmartBannerPortrait origin:origin];
 	self.bannerView.adUnitID = self.bannerId;
 	self.bannerView.rootViewController = [self getViewController];
 	self.bannerView.delegate = self;
+	
 	[[self getViewController].view addSubview: self.bannerView];
 	
 	isBannerLoaded = false;
